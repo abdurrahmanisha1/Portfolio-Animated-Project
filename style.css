@@ -94,7 +94,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(https://img.freepik.com/free-photo/programmer-scanning-screen-his-smartwatch-with-smartphone-camera_1098-18710.jpg?w=2000);
+    background: url(image/banner1.png);
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
