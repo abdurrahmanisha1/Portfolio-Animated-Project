@@ -7,18 +7,19 @@
     list-style: none;
 }
 
-:root{
+:root {
     /* comon */
     --center: center;
-    
+
     /* color */
     --crimson: crimson;
     --white: white;
     --black: black;
+    --deeppink: deeppink;
 
     /* font style */
     --bold: bold;
-    
+
     /* transition */
     --transition0: 0.5s;
     --transition1: 1s;
@@ -38,7 +39,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 0px 100px;
     z-index: 10000;
     display: flex;
     justify-content: space-between;
@@ -49,10 +50,21 @@ header {
 header .logo {
     font-weight: bold;
     color: var(--crimson);
-    font-size: 30px;
+    font-size: 20px;
     font-family: cursive;
+    display: flex;
 }
-header .logo span{
+
+header .logo img {
+    height: 70px;
+    animation: logo 5s ease-in-out infinite;
+}
+
+header .logo h2 {
+    padding-top: 16px;
+}
+
+header .logo span {
     color: var(--crimson);
 }
 
@@ -69,19 +81,20 @@ header ul li a {
     color: var(--white);
     font-weight: var(--bold);
 }
+
 header ul li a:hover {
     color: var(--crimson);
     transition: var(--transition0);
 }
-.sticky{
+
+.sticky {
     background: var(--white);
 }
-.sticky a{
+
+.sticky a {
     color: var(--black);
 }
-body{
-    height: 100000px;
-}
+
 
 /* ##############################
 ------->  Banner Section <---
@@ -94,13 +107,67 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(image/banner1.png);
+    /* background: url(image/banner1.png);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background: var(--black);
+    color: var(--white);
     overflow: hidden;
-    color: white;
 }
 
-.banner:hover {}
+.banner .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 100px;
+}
 
-.banner {}
+.banner .content .box-1 {
+    width: 45%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 255, 0.106); */
+}
+
+.banner .content .box-1 h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.banner .content .box-1 h3 {
+    color: var(--crimson);
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.banner .content .box-1 p {
+    padding: 0px 0px 20px 0px;
+    line-height: 30px;
+    font-size: 19px;
+}
+
+.banner .content .box-1 hr {
+    border: none;
+    height: 5px;
+    background: var(--crimson);
+    width: 20%;
+    margin: 0px 0px 20px 0px;
+}
+
+.banner .content .box-1 button {
+    padding: 15px 50px;
+    font-weight: var(--bold);
+    border: none;
+    color: var(--white);
+    animation: btn1 5s ease-in-out infinite;
+}
+
+.banner .content .box-1 button.btn {
+    padding: 15px 50px;
+    font-weight: var(--bold);
+    border: none;
+    color: var(--white);
+    animation: btn1 10s ease-in-out infinite;
+    animation-delay: 0.1s;
+}
