@@ -8,6 +8,9 @@
 }
 
 :root{
+    /* comon */
+    --center: center;
+    
     /* color */
     --crimson: crimson;
     --white: white;
@@ -19,6 +22,10 @@
     /* transition */
     --transition0: 0.5s;
     --transition1: 1s;
+
+    /* display */
+    --flex: flex;
+    --block: block;
 }
 
 
@@ -51,7 +58,6 @@ header .logo span{
 
 header ul {
     position: relative;
-    display: flex;
 }
 
 header ul li {

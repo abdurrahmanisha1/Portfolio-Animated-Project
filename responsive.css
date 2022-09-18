@@ -1,20 +1,50 @@
-@media (max-width: 1000px ){
+@media (max-width: 1000px) {
     header {
         padding: 10px 100px;
     }
+
     header ul li {
         margin-left: 40px;
     }
 }
 
 
-@media (max-width: 900px ){
+@media (max-width: 900px) {
     header {
         padding: 10px 20px;
     }
+
     header .navigation {
         display: none;
     }
+
+    header .navigation.active {
+        /* display: none; */
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        display: var(--flex);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: var(--white);
+    }
+    header .navigation .nav {
+        background: red;
+        
+    }
+    header .navigation li  {
+        display: block;
+        padding: 10px 0px;
+        text-align: var(--center);
+    }
+    header .navigation li a {
+        color: var(--black);
+        font-size: 20px;
+    }
+
     .menuToggle {
         position: relative;
         background: url(image/menu.png);
@@ -26,6 +56,7 @@
         cursor: pointer;
         filter: invert(1);
     }
+
     .menuToggle.active {
         position: relative;
         background: url(image/close.png);
@@ -34,6 +65,7 @@
         background-repeat: no-repeat;
         background-size: 30px;
     }
+
     .sticky .menuToggle {
         filter: invert(0);
     }
