@@ -124,7 +124,6 @@ header ul li a:hover {
 .banner .content .box-1 {
     width: 45%;
     height: 100%;
-    /* background-color: rgba(0, 0, 255, 0.106); */
 }
 
 .banner .content .box-1 h1 {
@@ -171,7 +170,7 @@ header ul li a:hover {
 
 
 /* ##############################
-------->  Banner Watch Section <---
+-----> Banner Watch Section <---
 ###############################*/
 
 .clock {
