@@ -62,10 +62,7 @@ header .logo img {
 
 header .logo h2 {
     padding-top: 16px;
-}
-
-header .logo span {
-    color: var(--crimson);
+    animation: color-hue 40s ease-in-out infinite;
 }
 
 header ul {
@@ -139,6 +136,7 @@ header ul li a:hover {
     color: var(--crimson);
     text-transform: uppercase;
     font-size: 25px;
+    animation: color-hue 30s ease-in-out infinite;
 }
 
 .banner .content .box-1 p {
@@ -170,4 +168,104 @@ header ul li a:hover {
     color: var(--white);
     animation: btn1 10s ease-in-out infinite;
     animation-delay: 0.1s;
+}
+
+
+
+/* ##############################
+------->  Banner Watch Section <---
+###############################*/
+
+.clock {
+    width: 480px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(image/clock.png);
+    background-size: cover;
+    border: 4px solid #091921;
+    border-radius: 50%;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+        inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+        0 15px 15px rgba(0, 0, 0, 0.4),
+        inset 0 15px 15px rgba(0, 0, 0, 0.4);
+
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: #ffffff;
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec {
+    position: absolute;
+
+}
+
+.clock .hour,
+.hr {
+    width: 160px;
+    height: 160px;
+}
+
+.clock .min,
+.mn {
+    width: 190px;
+    height: 190px;
+}
+
+.clock .sec,
+.sc {
+    width: 230px;
+    height: 230px;
+}
+
+.hr,
+.mn,
+.sc {
+    display: flex;
+    /*         align-items: center;*/
+    justify-content: center;
+    border-radius: 50%;
+
+}
+
+.hr::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #cb0017;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+
+}
+
+.mn::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: #fff;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+
+}
+
+.sc::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #fff;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
 }

@@ -23,3 +23,16 @@
         filter: hue-rotate(0deg);
     }
 }
+
+@keyframes color-hue {
+
+    0%,
+    100% {
+        filter: hue-rotate(360deg);
+    }
+
+    50% {
+        /* background: linear-gradient(var(--deeppink), var(--black), var(--deeppink)); */
+        filter: hue-rotate(0deg);
+    }
+}
