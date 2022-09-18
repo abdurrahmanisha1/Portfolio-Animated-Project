@@ -1,0 +1,40 @@
+@media (max-width: 1000px ){
+    header {
+        padding: 10px 100px;
+    }
+    header ul li {
+        margin-left: 40px;
+    }
+}
+
+
+@media (max-width: 900px ){
+    header {
+        padding: 10px 20px;
+    }
+    header .navigation {
+        display: none;
+    }
+    .menuToggle {
+        position: relative;
+        background: url(image/menu.png);
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30px;
+        cursor: pointer;
+        filter: invert(1);
+    }
+    .menuToggle.active {
+        position: relative;
+        background: url(image/close.png);
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat;
+        background-size: 30px;
+    }
+    .sticky .menuToggle {
+        filter: invert(0);
+    }
+}

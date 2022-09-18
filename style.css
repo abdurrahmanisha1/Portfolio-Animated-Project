@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    /* color */
+    --crimson: crimson;
+    --white: white;
+    --black: black;
+
+    /* font style */
+    --bold: bold;
+    
+    /* transition */
+    --transition0: 0.5s;
+    --transition1: 1s;
+}
+
+
+/* ##############################
+------->  Header Section <---
+###############################*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header .logo {
+    font-weight: bold;
+    color: var(--crimson);
+    font-size: 30px;
+    font-family: cursive;
+}
+header .logo span{
+    color: var(--crimson);
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+header ul li a {
+    color: var(--white);
+    font-weight: var(--bold);
+}
+header ul li a:hover {
+    color: var(--crimson);
+    transition: var(--transition0);
+}
+.sticky{
+    background: var(--white);
+}
+.sticky a{
+    color: var(--black);
+}
+body{
+    height: 100000px;
+}
+
+/* ##############################
+------->  Banner Section <---
+###############################*/
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://img.freepik.com/free-photo/programmer-scanning-screen-his-smartwatch-with-smartphone-camera_1098-18710.jpg?w=2000);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    color: white;
+}
+
+.banner:hover {}
+
+.banner {}
