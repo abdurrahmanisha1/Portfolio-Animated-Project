@@ -11,11 +11,17 @@
     /* comon */
     --center: center;
 
+    /* coursor */
+    --pointer: pointer;
+
     /* color */
     --crimson: crimson;
     --white: white;
     --black: black;
     --deeppink: deeppink;
+    --yellow: yellow;
+    --red: red;
+    --indigo: indigo;
 
     /* font style */
     --bold: bold;
@@ -262,4 +268,111 @@ header ul li a:hover {
     background: var(--deeppink);
     z-index: 12;
     border-radius: 6px 6px 0 0;
+}
+
+
+/* ##############################
+------->  Calender Section <---
+###############################*/
+
+.calender {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: rgb(56, 56, 56); */
+    background: var(--black);
+    overflow: hidden;
+}
+
+.calender::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(var(--yellow), var(--crimson));
+    border-radius: 50%;
+    transform: translate(-250px, -120px);
+}
+
+.calender::after {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(var(--indigo), var(--crimson));
+    border-radius: 50%;
+    transform: translate(250px, 150px);
+}
+
+.calender .box {
+    position: relative;
+    z-index: 1000;
+}
+
+.calender .box .container {
+    position: relative;
+    height: 450px;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 25px 45px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calender .box .container #dycalendar {
+    width: 100%;
+    padding: 20px;
+}
+
+.calender .box .container #dycalendar table {
+    width: 100%;
+    padding-top: 40px;
+    border-spacing: 5px;
+}
+
+.calender .box .container #dycalendar table tr:nth-child(1) td {
+    background: var(--white);
+    color: var(--black);
+    font-weight: var(--bold);
+    border-radius: 3px;
+    padding: 10px 10px;
+}
+
+.calender .box .container #dycalendar table td {
+    color: var(--white);
+    padding: 10px 10px;
+    text-align: var(--center);
+}
+
+.calender .box .container #dycalendar table td:hover {
+    color: var(--black);
+    background: var(--white);
+    cursor: var(--pointer);
+}
+
+.calender .box .container #dycalendar table td.dycalendar-target-date {
+    color: var(--white);
+    background: var(--crimson);
+    font-weight: var(--bold);
+}
+
+.calender .box .container #dycalendar .dycalendar-prev-next-btn {
+    background: var(--white);
+    color: var(--black);
+    font-weight: var(--bold);
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.calender .box .container #dycalendar .dycalendar-span-month-year {
+    color: var(--white);
+    font-weight: var(--bold);
+    font-size: 25px;
+    padding: 10px 30px;
 }

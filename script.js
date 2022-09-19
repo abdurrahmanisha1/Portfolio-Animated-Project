@@ -30,3 +30,14 @@ setInterval(() => {  //------1
     mn.style.transform = `rotateZ(${mm}deg)`
     sc.style.transform = `rotateZ(${ss}deg)`
 });
+
+
+// chalender 
+dycalendar.draw({
+    target: '#dycalendar',
+    type: 'month',
+    dayformate: 'full',
+    monthformate: 'full',
+    highlighttargetdate: true,
+    prevnextbutton: 'show',
+})
