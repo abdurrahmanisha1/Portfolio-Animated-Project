@@ -293,7 +293,7 @@ header ul li a:hover {
     height: 400px;
     background: linear-gradient(var(--yellow), var(--crimson));
     border-radius: 50%;
-    transform: translate(-250px, -120px);
+    animation: calender-before 10s ease-in-out infinite;
 }
 
 .calender::after {
@@ -303,7 +303,7 @@ header ul li a:hover {
     height: 350px;
     background: linear-gradient(var(--indigo), var(--crimson));
     border-radius: 50%;
-    transform: translate(250px, 150px);
+    animation: calender-after 10s ease-in-out infinite;
 }
 
 .calender .box {
@@ -323,6 +323,7 @@ header ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: calender 10s ease-in-out infinite;
 }
 
 .calender .box .container #dycalendar {

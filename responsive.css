@@ -60,6 +60,12 @@
         width: 400px;
         height: 400px;
     }
+
+    /* calender */
+    .calender::before {
+        width: 350px;
+        height: 350px;
+    }
 }
 
 /* ###########################
@@ -155,6 +161,19 @@
     .banner .content .box-1 h1 {
         font-size: 35px;
     }
+
+    /* calender */
+    .calender::before {
+        width: 300px;
+        height: 300px;
+        transform: translate(-170px, -160px) !important;
+    }
+    
+    .calender::after {
+        width: 300px;
+        height: 300px;
+        transform: translate(170px, 160px) !important;
+    }
 }
 
 /* ###########################
@@ -177,6 +196,21 @@
     .clock {
         width: 350px;
         height: 350px;
+    }
+
+    /* calender */
+    .calender .box .container {
+        height: 430px;
+        width: 350px;
+    }
+    .calender .box .container #dycalendar {
+        padding: 10px;
+    }
+    .calender .box .container #dycalendar .dycalendar-prev-next-btn {
+        padding: 10px 15px;
+    }
+    .calender .box .container #dycalendar .dycalendar-span-month-year {
+        font-size: 20px;
     }
 }
 
@@ -210,5 +244,20 @@
     .clock {
         width: 270px;
         height: 270px;
+    }
+
+     /* calender */
+     .calender .box .container {
+        height: 430px;
+        width: 320px;
+    }
+    .calender .box .container #dycalendar {
+        padding: 10px;
+    }
+    .calender .box .container #dycalendar .dycalendar-prev-next-btn {
+        padding: 10px 15px;
+    }
+    .calender .box .container #dycalendar .dycalendar-span-month-year {
+        font-size: 20px;
     }
 }
