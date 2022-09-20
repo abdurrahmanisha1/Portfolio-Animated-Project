@@ -22,6 +22,7 @@
     --yellow: yellow;
     --red: red;
     --indigo: indigo;
+    --gray: gray;
 
     /* font style */
     --bold: bold;
@@ -32,7 +33,9 @@
 
     /* display */
     --flex: flex;
+    --wrap: wrap;
     --block: block;
+    --space-between: space-between;
 
     /* position */
     --absolute: absolute;
@@ -377,4 +380,71 @@ header ul li a:hover {
     font-weight: var(--bold);
     font-size: 25px;
     padding: 10px 30px;
+}
+
+/* ##############################
+------->  Pricing Section <---
+###############################*/
+
+.pricing {
+    min-height: 100vh;
+    width: 100%;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    background: var(--black);
+    color: var(--gray);
+    overflow: hidden;
+}
+
+.pricing .row {
+    display: var(--flex);
+    flex-wrap: var(--wrap);
+    justify-content: var(--space-between);
+    align-items: var(--center);
+    padding: 0px 100px;
+}
+
+.pricing .row column {
+    text-align: var(--center);
+    border: 2px solid gray;
+    width: 350px;
+    margin: 0 20px;
+}
+
+.pricing .row column img {
+    height: 100px;
+    background: var(--black);
+    border-radius: 50%;
+    padding: 10px;
+    margin: 30px 0;
+    box-shadow: 0 -10px 15px rgba(0, 255, 4, 0.557),
+        inset 0 -10px 10px rgba(0, 255, 4, 0.557),
+        0 15px 15px rgba(0, 255, 4, 0.557),
+        inset 0 15px 15px rgba(0, 255, 4, 0.557);
+}
+
+.pricing .row column h1 {
+    padding: 10px 0;
+}
+
+.pricing .row column h2 {
+    padding: 5px 0;
+}
+
+.pricing .row column h3 {
+    padding: 5px 0;
+}
+
+.pricing .row column hr {
+    border: none;
+    border: 1px solid var(--gray);
+}
+
+.pricing .row column p {
+    padding: 5px 0;
+}
+
+.pricing .row column button {
+    margin: 20px 0;
 }
