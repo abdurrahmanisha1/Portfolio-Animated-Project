@@ -37,9 +37,11 @@
     .pricing .row {
         padding: 0px 50px;
     }
+
     .pricing .row column {
         width: 270px;
     }
+
     .pricing .row column button {
         padding: 7px 70px;
         border-radius: 4px;
@@ -89,10 +91,11 @@
     .pricing .row {
         padding: 0px 20px;
     }
+
     .pricing .row column {
         width: 270px;
     }
-    
+
 }
 
 /* ###########################
@@ -195,7 +198,7 @@
         height: 300px;
         transform: translate(-170px, -160px) !important;
     }
-    
+
     .calender::after {
         width: 300px;
         height: 300px;
@@ -206,9 +209,11 @@
     .pricing .row {
         padding: 0px 20px;
     }
+
     .pricing .row column {
         width: 210px;
     }
+
     .pricing .row column button {
         padding: 10px 50px;
     }
@@ -217,31 +222,39 @@
 /* ###########################
 ==>>  ( max-width: 700px )
 #############################*/
-@media (max-width: 700px){
+@media (max-width: 700px) {
+
     /* pricing  */
     .pricing .row {
         padding: 0px 10px;
     }
+
     .pricing .row column {
         width: 150px;
     }
+
     .pricing .row column h1 {
         font-size: 20px;
     }
+
     .pricing .row column h2 {
         font-size: 18px;
     }
+
     .pricing .row column h3 {
         font-size: 16px;
     }
+
     .pricing .row column p {
         font-size: 14px;
     }
+
     .pricing .row column button {
         padding: 7px 20px;
         border-radius: 4px;
     }
 }
+
 /* ###########################
 ==>>  ( max-width: 550px )
 #############################*/
@@ -269,12 +282,15 @@
         height: 430px;
         width: 350px;
     }
+
     .calender .box .container #dycalendar {
         padding: 10px;
     }
+
     .calender .box .container #dycalendar .dycalendar-prev-next-btn {
         padding: 10px 15px;
     }
+
     .calender .box .container #dycalendar .dycalendar-span-month-year {
         font-size: 20px;
     }
@@ -282,23 +298,32 @@
     /* pricing  */
     .pricing .row {
         padding: 0px 10px;
+        display: var(--flex);
+        justify-content: var(--center);
+        align-items: var(--center);
     }
+
     .pricing .row column {
-        width: 100%;
+        width: 80%;
         margin: 20px 0;
     }
+
     .pricing .row column h1 {
         font-size: 25px;
     }
+
     .pricing .row column h2 {
         font-size: 22px;
     }
+
     .pricing .row column h3 {
         font-size: 18px;
     }
+
     .pricing .row column p {
         font-size: 17px;
     }
+
     .pricing .row column button {
         padding: 7px 70px;
         border-radius: 4px;
@@ -337,17 +362,20 @@
         height: 270px;
     }
 
-     /* calender */
-     .calender .box .container {
+    /* calender */
+    .calender .box .container {
         height: 430px;
         width: 320px;
     }
+
     .calender .box .container #dycalendar {
         padding: 10px;
     }
+
     .calender .box .container #dycalendar .dycalendar-prev-next-btn {
         padding: 10px 15px;
     }
+
     .calender .box .container #dycalendar .dycalendar-span-month-year {
         font-size: 20px;
     }
