@@ -4,6 +4,11 @@
         text-transform: uppercase;
         padding: 10px 0;
     }
+
+    /* pricing */
+    .pricing .row column {
+        width: 300px;
+    }
 }
 
 /* ###########################
@@ -22,9 +27,22 @@
         font-size: 22px;
     }
 
+    /* clock */
     .clock {
         width: 440px;
         height: 440px;
+    }
+
+    /* pricing */
+    .pricing .row {
+        padding: 0px 50px;
+    }
+    .pricing .row column {
+        width: 270px;
+    }
+    .pricing .row column button {
+        padding: 7px 70px;
+        border-radius: 4px;
     }
 }
 
@@ -37,7 +55,7 @@
     }
 
     header ul li {
-        margin-left: 40px;
+        margin-left: 30px;
     }
 
     .banner .content .box-1 h1 {
@@ -66,6 +84,15 @@
         width: 350px;
         height: 350px;
     }
+
+    /* pricing */
+    .pricing .row {
+        padding: 0px 20px;
+    }
+    .pricing .row column {
+        width: 270px;
+    }
+    
 }
 
 /* ###########################
@@ -174,8 +201,47 @@
         height: 300px;
         transform: translate(170px, 160px) !important;
     }
+
+    /* pricing */
+    .pricing .row {
+        padding: 0px 20px;
+    }
+    .pricing .row column {
+        width: 210px;
+    }
+    .pricing .row column button {
+        padding: 10px 50px;
+    }
 }
 
+/* ###########################
+==>>  ( max-width: 700px )
+#############################*/
+@media (max-width: 700px){
+    /* pricing  */
+    .pricing .row {
+        padding: 0px 10px;
+    }
+    .pricing .row column {
+        width: 150px;
+    }
+    .pricing .row column h1 {
+        font-size: 20px;
+    }
+    .pricing .row column h2 {
+        font-size: 18px;
+    }
+    .pricing .row column h3 {
+        font-size: 16px;
+    }
+    .pricing .row column p {
+        font-size: 14px;
+    }
+    .pricing .row column button {
+        padding: 7px 20px;
+        border-radius: 4px;
+    }
+}
 /* ###########################
 ==>>  ( max-width: 550px )
 #############################*/
@@ -211,6 +277,31 @@
     }
     .calender .box .container #dycalendar .dycalendar-span-month-year {
         font-size: 20px;
+    }
+
+    /* pricing  */
+    .pricing .row {
+        padding: 0px 10px;
+    }
+    .pricing .row column {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .pricing .row column h1 {
+        font-size: 25px;
+    }
+    .pricing .row column h2 {
+        font-size: 22px;
+    }
+    .pricing .row column h3 {
+        font-size: 18px;
+    }
+    .pricing .row column p {
+        font-size: 17px;
+    }
+    .pricing .row column button {
+        padding: 7px 70px;
+        border-radius: 4px;
     }
 }
 

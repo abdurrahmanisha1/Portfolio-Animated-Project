@@ -392,9 +392,10 @@ header ul li a:hover {
     display: var(--flex);
     justify-content: var(--center);
     align-items: var(--center);
-    background: var(--black);
+    background: var(--crimson);
     color: var(--gray);
     overflow: hidden;
+    animation: color-hue 20s ease-in-out infinite;
 }
 
 .pricing .row {
@@ -407,9 +408,10 @@ header ul li a:hover {
 
 .pricing .row column {
     text-align: var(--center);
-    border: 2px solid gray;
-    width: 350px;
-    margin: 0 20px;
+    border-top: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+    width: 380px;
+    background: var(--black);
 }
 
 .pricing .row column img {
@@ -422,6 +424,7 @@ header ul li a:hover {
         inset 0 -10px 10px rgba(0, 255, 4, 0.557),
         0 15px 15px rgba(0, 255, 4, 0.557),
         inset 0 15px 15px rgba(0, 255, 4, 0.557);
+    animation: logo 10s ease-in-out infinite;
 }
 
 .pricing .row column h1 {
@@ -446,5 +449,11 @@ header ul li a:hover {
 }
 
 .pricing .row column button {
-    margin: 20px 0;
+    margin: 20px 0 40px 0;
+    padding: 10px 100px;
+    font-weight: var(--bold);
+    border: none;
+    border-radius: 20px;
+    color: var(--white);
+    animation: btn1 5s ease-in-out infinite;
 }
